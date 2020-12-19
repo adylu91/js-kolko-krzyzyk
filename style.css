@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #000000;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  min-height: 100vh;
+  margin: 0 auto;
+  color: white;
+}
+
+.name {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  text-align: center;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.name::after {
+  content: "";
+  display: block;
+  border-bottom: 4px solid white;
+}
+
+.board {
+  min-height: 600px;
+  border: 4px solid white;
+  display: flex;
+  flex-direction: column;
+}
+
+.info {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.game {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.squareWrapper {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.square {
+  height: 100px;
+  width: 100px;
+  border-color: white;
+  border-width: 3px;
+  transition: 0.3s;
+  cursor: pointer;
+  font-size: 60px;
+  text-align: center;
+  line-height: 100px;
+}
+
+.square:hover {
+  background-color: #1f1f1f;
+}
+
+.square.turnOff {
+  pointer-events: none;
+}
+
+.square0 {
+  border-right: solid;
+  border-bottom: solid;
+}
+.square1 {
+  border-left: solid;
+  border-right: solid;
+  border-bottom: solid;
+}
+.square2 {
+  border-left: solid;
+  border-bottom: solid;
+}
+.square3 {
+  border-top: solid;
+  border-right: solid;
+  border-bottom: solid;
+}
+.square4 {
+  border-left: solid;
+  border-top: solid;
+  border-bottom: solid;
+  border-right: solid;
+}
+.square5 {
+  border-left: solid;
+  border-top: solid;
+  border-bottom: solid;
+}
+.square6 {
+  border-top: solid;
+  border-right: solid;
+}
+.square7 {
+  border-left: solid;
+  border-top: solid;
+  border-right: solid;
+}
+.square8 {
+  border-left: solid;
+  border-top: solid;
+}
